@@ -17,7 +17,7 @@ Now you have to initializing the npm
 $ npm init -y
 ```
 
-Here install `express`, middleware `cors`, database `mongodb`, security environmental variable `dotenv` .env.\
+Here install `express`, middleware `cors`, database `mongodb`, security environmental variable `dotenv` (.env).
 
 ```bash
 npm i express cors mongodb dotenv
@@ -115,6 +115,9 @@ That's it. `process.env` now has the keys and values you defined in your `.env` 
 
 ```javascript
 require('dotenv').config()
+
 ...
+
 s3.getBucketCors({Bucket: process.env.DB_USER}, function(err, data) {})
+
 ```
